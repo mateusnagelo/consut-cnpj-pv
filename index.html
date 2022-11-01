@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <title>Consulta CNPJ</title>
+</head>
+<body > 
+    
+    <form class="container" id="searchbody">
+        <h1 class="title">Consulte seu CNPJ</h1>
+        <hr>
+        <div class="row" >
+            <div class="inputbox">
+                <input type="text" id="nome" >
+                <label for="nome">Razão Social</label>
+            </div>
+            <div class="inputbox">
+                <input type="text" id="fantasia"  >
+                <label for="fantasia">Nome Fantasia</label>
+            </div>
+            <div class="inputbox">
+                <input type="text" id="cnpj"  >
+                <label for="cnpj">CNPJ</label>
+            </div>
+            <div class="inputbox">
+                <input type="text" id="inscricao" >
+                <label for="inscricao">Inscrição Estudal</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="inputbox">
+                <input type="text" id="natureza" >
+                <label for="natureza">Natureza Jurídica</label>
+            </div>
+            <div class="inputbox">
+                <input type="text" id="situacao"  >
+                <label for="situacao">Situação</label>
+            </div>
+            <div class="inputbox">
+                <input type="text" id="porte"  >
+                <label for="porte">Porte</label>
+            </div>
+            <div class="inputbox">
+                <input type="text" id="cidade"  >
+                <label for="cidade">Cidade</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="inputbox">
+                <input type="text" id="endereco"  >
+                <label for="endereco">Endereço</label>
+            </div>
+            <div class="inputbox">
+                <input type="text" id="bairro" >
+                <label for="bairro">Bairro</label>
+            </div>
+            <div class="inputbox">
+                <input type="text" id="numero"  >
+                <label for="numero">Número</label>
+            </div>
+            <div class="inputbox">
+                <input type="text" id="estado">
+                <label for="estado">Estado</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="inputbox">
+                <input type="text" id="uf"  >
+                <label for="uf">UF</label>
+            </div>
+            <div class="inputbox">
+                <input type="text" id="cep"  >
+                <label for="cep">CEP</label>
+            </div>
+            <div class="inputbox">
+                <input type="text" id="complemtento"   >
+                <label for="complemtento">Complemtento</label>
+            </div>
+            <div class="inputbox">
+                <input type="text" id="telefone"  s>
+                <label for="telefone">Telefone</label>
+            </div>
+        </div>
+        <div class="row">
+            <button  class="btn-consulta"> CONSULTAR </button>
+        </div>
+    </form>
+    <footer>
+        <a  href =" https://github.com/mateusnagelo " target =" _blank ">
+            Copyright © 2022 todos os direitos reservados | Este site foi criado por Mateus Ângelo 
+        </a>
+    </footer>
+    <script src="./js/apicnpj.js"></script>
+</body>
+</html>
