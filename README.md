@@ -1,4 +1,4 @@
-<img src="img/consulta-cnpj.png"/>
+<img src="img/consulta-cnpj-pv.png"/>
 
 
 
