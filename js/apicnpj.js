@@ -29,7 +29,7 @@ getElement('searchbody').addEventListener('submit', function (e) {
 
                     
                 }).catch(error => {
-                    alert('CNPJ ENCONTRADO');
+                    
                 });
         }
     })
