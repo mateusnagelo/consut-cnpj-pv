@@ -25,10 +25,6 @@ getElement('searchForm').addEventListener('submit', (e) => {
                 getElement('endereco').value = data.estabelecimento.logradouro;
                 getElement('bairro').value = data.estabelecimento.bairro;
                 getElement('complemento').value = data.estabelecimento.complemento;
-
-
-
-
                 getElement('inscricao').value = data.estabelecimento.inscricao_estadual;
 
 

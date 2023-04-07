@@ -106,6 +106,9 @@ input::-webkit-inner-spin-button {
     border-radius: 8px;
     color: #fff;
 }
+.btn-consulta{
+    cursor: pointer;
+}
 
 footer {
     
@@ -116,3 +119,4 @@ hr{
     margin-bottom: 4rem;
     
 }
+
