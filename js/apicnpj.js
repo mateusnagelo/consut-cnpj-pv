@@ -57,7 +57,7 @@ getElement('searchbody').addEventListener('submit', function (e) {
 
     
         // Define o título do PDF
-        const doc = new jsPDF({ title: 'Informações do CNPJ' });
+        const doc = new jsPDF({ title: 'Informações do CNPJ' })
     
         // Adiciona os valores dos campos ao PDF
         doc.text(`Nome: ${nome}`, 20, 20);
@@ -77,7 +77,7 @@ getElement('searchbody').addEventListener('submit', function (e) {
         doc.text(`Complemento: ${complemento}`, 20, 160);
     
         // Salva o PDF com o nome "informacoes_cnpj.pdf"
-        doc.save('informacoes_cnpj.pdf');
+        doc.save ('informacoes_cnpj.pdf');
         
     }
     
