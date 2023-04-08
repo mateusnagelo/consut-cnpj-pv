@@ -55,6 +55,11 @@ getElement('searchbody').addEventListener('submit', function (e) {
         const complemento = getElement('complemento').value || '';
 
 
+        // Obtém o valor do CNPJ consultado
+        const cnpj = getElement('cnpj').value;
+  
+        // Remove caracteres especiais do CNPJ para garantir que o nome do arquivo seja válido
+        const nomeArquivo = cnpj.replace(/[^\d]/g, '') + '.pdf';
     
         // Define o título do PDF
         const doc = new jsPDF({ title: 'Informações do CNPJ' });
@@ -77,10 +82,18 @@ getElement('searchbody').addEventListener('submit', function (e) {
         doc.text(`Complemento: ${complemento}`, 20, 160);
     
         // Salva o PDF com o nome "informacoes_cnpj.pdf"
-        doc.save ('informacoes_cnpj.pdf');
+        doc.save(nomeArquivo);
         
     }
-    
+
+
+
+
+
+
+
+
+
 
  // Verifica se todos os elementos existem antes de acessar a propriedade value
  
