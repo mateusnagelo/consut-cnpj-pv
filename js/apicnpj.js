@@ -65,6 +65,7 @@ getElement('searchbody').addEventListener('submit', function (e) {
         const doc = new jsPDF({ title: 'Informações do CNPJ' });
     
         // Adiciona os valores dos campos ao PDF
+        doc.text(`CNPJ: ${cnpj}`, 20, 10);
         doc.text(`Nome: ${nome}`, 20, 20);
         doc.text(`Nome Fantasia: ${fantasia}`, 20, 30);
         doc.text(`Inscrição Estadual: ${inscricao}`, 20, 40);
